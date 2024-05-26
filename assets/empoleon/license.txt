@@ -1,0 +1,11 @@
+Model Information:
+* title:	Empoleon
+* source:	https://sketchfab.com/3d-models/empoleon-9367cd9a1d22408c88b59531ecf5e75e
+* author:	nguyenlouis32 (https://sketchfab.com/nguyenlouis32)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Empoleon" (https://sketchfab.com/3d-models/empoleon-9367cd9a1d22408c88b59531ecf5e75e) by nguyenlouis32 (https://sketchfab.com/nguyenlouis32) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

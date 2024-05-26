@@ -1,0 +1,285 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4641,
+      "max": [
+        4.201970100402832,
+        0.007205000147223473,
+        7.296263217926025
+      ],
+      "min": [
+        -6.1392669677734375,
+        -16.457731246948242,
+        -7.296263217926025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 55692,
+      "componentType": 5126,
+      "count": 4641,
+      "max": [
+        0.9990198612213135,
+        0.9999807476997375,
+        0.9973638653755188
+      ],
+      "min": [
+        -0.9999365210533142,
+        -0.9933532476425171,
+        -0.9973638653755188
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4641,
+      "max": [
+        0.9966740012168884,
+        -0.010619999840855598
+      ],
+      "min": [
+        0.004790999926626682,
+        -0.9953920245170593
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4662,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 111384,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        1.192958950996399,
+        -11.754576683044434,
+        0.9210090041160583
+      ],
+      "min": [
+        0.5624899864196777,
+        -12.498437881469727,
+        -0.9210090041160583
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 112104,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        0.6981730461120605,
+        0.9006069898605347,
+        0.9566068649291992
+      ],
+      "min": [
+        -0.3764569163322449,
+        -0.9048002362251282,
+        -0.9566068649291992
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37128,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        -0.5099490284919739,
+        -0.02435299940407276
+      ],
+      "min": [
+        -0.9255369901657104,
+        -0.19213899970054626
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18648,
+      "componentType": 5125,
+      "count": 60,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "nguyenlouis32 (https://sketchfab.com/nguyenlouis32)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/empoleon-9367cd9a1d22408c88b59531ecf5e75e",
+      "title": "Empoleon"
+    },
+    "generator": "Sketchfab-13.42.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 18888,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37608,
+      "byteOffset": 18888,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 112824,
+      "byteOffset": 56496,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 169320,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/EmperteDh_baseColor.png"
+    },
+    {
+      "uri": "textures/EmperteEyeDh_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "EmperteDh",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "EmperteEyeDh",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.0,
+        -1.1102230246251565e-16,
+        1.0,
+        0.0,
+        -1.1102230246251565e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        -2.2204460492503128e-16,
+        -1.110223024625157e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        3
+      ],
+      "name": "Emperteout.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
