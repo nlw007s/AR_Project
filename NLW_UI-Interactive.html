@@ -5,56 +5,91 @@
     <meta charset="utf-8" />
     <!-- Correcting zooming issue -->
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>WebAR: UI using A-Frame</title>
+    <title>WebAR: UI using CSS</title>
     <!-- Library untuk VR membangun 3D -->
     <script src="./js/aframe/aframe.min.js"></script>
     <!-- Library untuk AR yang melakukan pengenalan marker dan menyematkan kamera-->
     <script src="./js/arjs/aframe-ar.js"></script>
-
-    <script>
-        // here we register che 'clickhandler' component
-        AFRAME.registerComponent("clickhandler", {
-            init: function() {
-                // we add the click event listener to any instance of this component
-                this.el.addEventListener("click", () => {
-                    alert("Clicked!");
-                });
-            }
-        });
-    </script>
-
+    <style>
+        /* Mengatur posisi elemen pada halaman */
+        
+        #UI {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+        }
+        /* Styling */
+        
+        #UI {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2em;
+            font-weight: 400;
+            text-align: center;
+            color: white;
+            background-color: blue;
+            display: block;
+            width: 10em;
+        }
+        
+        .buttons {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        .say-hi-button {
+            padding: 0.25em;
+            border-radius: 4px;
+            border: none;
+            background: white;
+            color: black;
+            width: 4em;
+            height: 2em;
+        }
+    </style>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-    <!-- with cursor and raycaster, we define a raycaster handler.
-    With 'raycaster' we add a CSS selector to match the only elements that will react to click events,
-    for performances reasons. See: (https://aframe.io/docs/1.0.0/introduction/interactions-and-controllers.html) -->
-    <a-scene cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;" raycaster="objects: [clickhandler];" vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <a-scene embedded vr-mode-ui="enabled: false" arjs='debugUIEnabled: false;'>
 
-        <!-- add a hiro marker -->
+        <!-- add a hiro marker-->
         <a-marker preset="hiro">
-            <!-- this entity, potentially every other on the a-scene, has the 'clickhandler' component
-      and will behave has we have defined: it will handle click events! -->
-            <a-box clickhandler position="0 0.5 0" material="color: green; opacity: 0.5;">
-                <a-text value="Marker Hiro" position="0 0.55 0" rotation="-90 0 0" color="magenta" align="center">
-                </a-text>
+            <a-box position="0 0.5 0" material="color: green; opacity: 0.5;">
+                <a-text value="Marker Hiro" position="0 0.55 0" rotation="-90 0 0" color="magenta" align="center"></a-text>
             </a-box>
         </a-marker>
 
-        <!-- UI Element inside a-scene -->
-        <!-- object relative to camera -->
-        <!-- z position must be minus value (e.g. -1) to placed in front of camera-->
-        <!-- this entity, potentially every other on the a-scene, has the 'clickhandler' component
-      and will behave has we have defined: it will handle click events! -->
-        <a-entity position="0 .25 -1" scale=".1 .1 .1">
-            <a-box clickhandler rotation="45 45 45" position="-1.5 0 0" scale=".3 .3 .3" color="blue" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"></a-box>
-            <a-text value="Gunakan marker hiro" color="orange" align="center"></a-text>
-            <a-box clickhandler rotation="45 45 45" position="1.5 0 0" scale=".3 .3 .3" color="blue" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"></a-box>
-        </a-entity>
-
         <!-- add a simple camera -->
         <a-entity camera></a-entity>
+
     </a-scene>
+
+    <!-- UI Element outside a-scene -->
+    <div id="UI">USE IDENTITY CARD</div>
+    <div class="buttons">
+        <button class="identifier_button">Identifier</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document
+                .querySelector(".identifier_button")
+                .addEventListener("click", function() {
+                    // here you can change also a-scene or a-entity properties, like
+                    // changing your 3D model source, size, position and so on
+                    // or you can just open links, trigger actions...
+                    alert("Identified as Nourma Layyinna Wijaya");
+                });
+        };
+    </script>
+    <!-- reference: https://ar-js-org.github.io/AR.js-Docs/ui-events/ -->
+
 </body>
 
 </html>
