@@ -1,15 +1,36 @@
-
 <html>
   <head>
+    <style>
+      #back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #back-button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
+
+  
   <body>
+
+  <button id="back-button" onclick="goBack()">Back</button>
 
    <a-scene mindar-image="imageTargetSrc: ./assets/mind/targets.mind; maxTrack: 10" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
    <a-assets>
+    <!-- OBJECT -->
     <a-asset-item id="pk_bulbasaur" src="./assets/bulbasaur/scene.gltf"></a-asset-item>
     <a-asset-item id="pk_charizard" src="./assets/charizard/scene.gltf"></a-asset-item>
     <a-asset-item id="pk_dialga" src="./assets/dialga/scene.gltf"></a-asset-item>
@@ -21,41 +42,88 @@
     <a-asset-item id="pk_latios" src="./assets/latios/scene.gltf"></a-asset-item>
     <a-asset-item id="pk_lugia" src="./assets/lugia/scene.gltf"></a-asset-item>
 
+    <img id="pk_bulbasaur_blk" src="./assets/BLANK POKEMON CARD/BULBASAUR_BLK.png">
+    <img id="pk_charizard_blk" src="./assets/BLANK POKEMON CARD/CHARIZARD_BLK.png">
+    <img id="pk_dialga_blk" src="./assets/BLANK POKEMON CARD/DIALGA_BLK.png">
+    <img id="pk_empoleon_blk" src="./assets/BLANK POKEMON CARD/EMPOLEON_BLK.png">
+    <img id="pk_flygon_blk" src="./assets/BLANK POKEMON CARD/FLYGON_BLK.png">
+    <img id="pk_gengar_blk" src="./assets/BLANK POKEMON CARD/GENGAR_BLK.png">
+    <img id="pk_glaceon_blk" src="./assets/BLANK POKEMON CARD/GLACEON_BLK.png">
+    <img id="pk_lapras_blk" src="./assets/BLANK POKEMON CARD/LAPRAS_BLK.png">
+    <img id="pk_latios_blk" src="./assets/BLANK POKEMON CARD/LATIOS_BLK.png">
+    <img id="pk_lugia_blk" src="./assets/BLANK POKEMON CARD/LUGIA_BLK.png">
+
+
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
+      <!-- BULBASAUR -->
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.15 0.15 0.15" src="#pk_bulbasaur" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="1.5 1.5 1.5" src="#pk_charizard" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model rotation="0 0 0 " position="0 -2 0" scale="0.05 0.05 0.05" src="#pk_dialga" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.08 0.08 0.08" src="#pk_empoleon" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#pk_flygon" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 5">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#pk_gengar" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#pk_glaceon" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.15 0.15 0.15" src="#pk_lapras" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 8">
+        <a-image src="#pk_bulbasaur_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.15 0.15 0.15" src="#pk_bulbasaur" animation-mixer>
+      </a-entity>
+
+      <!-- CHARIZARD -->
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-image src="#pk_charizard_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 40 0 " position="0 -0.1 0" scale="1.5 1.5 1.5" src="#pk_charizard" animation-mixer>
+      </a-entity>
+        
+      <!-- DIALGA -->
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-image src="#pk_dialga_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 -45 0 " position="0 0 0" scale="0.05 0.05 0.05" src="#pk_dialga" animation-mixer>
+      </a-entity>
+        
+      <!-- EMPOLEON -->
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-image src="#pk_empoleon_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.08 0.08 0.08" src="#pk_empoleon" animation-mixer>
+      </a-entity>
+
+      <!-- FLYGON -->
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-image src="#pk_flygon_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.05 0.05 0.05" src="#pk_flygon" animation-mixer>
+      </a-entity>
+        
+      <!-- GENGAR -->
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-image src="#pk_gengar_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0.6 0" scale="0.25 0.25 0.25" src="#pk_gengar" animation-mixer>
+      </a-entity>
+        
+      <!-- GLACEON -->
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-image src="#pk_glaceon_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.3 0.3 0.3" src="#pk_glaceon" animation-mixer>
+      </a-entity>
+        
+      <!-- LAPRAS -->
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-image src="#pk_lapras_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 0 0 " position="0 0.05 0" scale="0.15 0.15 0.15" src="#pk_lapras" animation-mixer>
+      </a-entity>
+        
+      <!-- LATIOS -->
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-image src="#pk_latios_blk" rotation="270 0 0" width="2" height="1"></a-image>
         <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#pk_latios" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 9">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="1.5 1.5 1.5" src="#pk_lugia" animation-mixer>
-        </a-entity>
+      </a-entity>
+        
+      <!-- LUGIA -->
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-image src="#pk_lugia_blk" rotation="270 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="0 45 0 " position="0 -0.25 0" scale="1.5 1.5 1.5" src="#pk_lugia" animation-mixer>
+      </a-entity>
 
     </a-scene>
+
+    <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
   </body>
 </html>

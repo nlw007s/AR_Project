@@ -29,6 +29,23 @@
       })
     </script>
     <style>
+      #back-button {
+            position: absolute;
+            margin-top: 40px;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #back-button:hover {
+            background-color: #e0e0e0;
+        }
+
       body {
         margin: 0;
       }
@@ -54,10 +71,12 @@
       .options-panel img.selected {
 	    border-color: rgb(0, 28, 237);
       }
+
     </style>
   </head>
 
   <body>
+    <button id="back-button" onclick="goBack()">Back</button>
     <div class="example-container">
       <div class="options-panel">
         <img id="pk_1" src="./assets/PNG/bulbasaur.png"/>
@@ -96,31 +115,38 @@
         <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="1.5 1.5 1.5" src="#pk_charizard" class="pk_2-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 10">
-        <a-gltf-model rotation="0 180 0" position="0 -1 -0.5" scale="0.05 0.05 0.05" src="#pk_dialga" class="pk_3-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 -45 0" position="0 0 -0.5" scale="0.05 0.05 0.05" src="#pk_dialga" class="pk_3-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 19">
         <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.08 0.08 0.08" src="#pk_empoleon" class="pk_4-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 54">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.05 0.05 0.05" src="#pk_flygon" class="pk_5-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 0.25 0" scale="0.05 0.05 0.05" src="#pk_flygon" class="pk_5-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 284">
-        <a-gltf-model rotation="0 190 0" position="0 0 0" scale="0.3 0.3 0.3" src="#pk_gengar" class="pk_6-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="-1 0 0" scale="0.2 0.2 0.2" src="#pk_gengar" class="pk_6-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 369">
-        <a-gltf-model rotation="0 90 0" position="0 0 0" scale="0.3 0.3 0.3" src="#pk_glaceon" class="pk_7-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.3 0.3 0.3" src="#pk_glaceon" class="pk_7-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 168">
-        <a-gltf-model rotation="0 180 0" position="0 0 0" scale="0.15 0.15 0.15" src="#pk_lapras" class="pk_8-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#pk_lapras" class="pk_8-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 52">
-        <a-gltf-model rotation="0 -90 0" position="0 -0.3 0" scale="0.3 0.3 0.3" src="#pk_latios" class="pk_9-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 -0.3 0" scale="0.3 0.3 0.3" src="#pk_latios" class="pk_9-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 330">
-        <a-gltf-model rotation="-0.1 -0 0" position="0 0 0" scale="1.5 1.5 1.5" src="#pk_lugia" class="pk_10-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 45 0" position="-1 1 -2" scale="1.5 1.5 1.5" src="#pk_lugia" class="pk_10-entity" visible="false"></a-gltf-model>
           </a-entity>
         
       </a-scene>
     </div>
   </body>
+
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
 </html>
