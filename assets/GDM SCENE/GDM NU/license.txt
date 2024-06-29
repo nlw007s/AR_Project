@@ -1,0 +1,8 @@
+Model Information:
+* title:	RX-93 Nu Gundam
+* source:	https://sketchfab.com/3d-models/rx-93-nu-gundam-3a34b608d56d4ce3a8a15aa5f82c1cf7
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

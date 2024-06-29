@@ -1,0 +1,8 @@
+Model Information:
+* title:	ZGMF-X42S Destiny Gundam
+* source:	https://sketchfab.com/3d-models/zgmf-x42s-destiny-gundam-c3d48adfca494c8e892e6cc6c388b0aa
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

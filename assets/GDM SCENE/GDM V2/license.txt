@@ -1,0 +1,8 @@
+Model Information:
+* title:	LM314V21 Victory 2 Gundam
+* source:	https://sketchfab.com/3d-models/lm314v21-victory-2-gundam-8a850f937d31460faf5977fc2dcaec8f
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

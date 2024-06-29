@@ -1,0 +1,8 @@
+Model Information:
+* title:	GX-9901-DX Gundam Double-X
+* source:	https://sketchfab.com/3d-models/gx-9901-dx-gundam-double-x-3a211ec2ae67484bb29a1e8e9b9811ae
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

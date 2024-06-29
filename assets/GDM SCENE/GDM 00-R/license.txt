@@ -1,0 +1,8 @@
+Model Information:
+* title:	GN-0000 Gundam Raiser
+* source:	https://sketchfab.com/3d-models/gn-0000-gundam-raiser-458f9b2be4ad4d60ac795cacf927abd9
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

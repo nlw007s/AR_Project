@@ -1,0 +1,11 @@
+Model Information:
+* title:	MSZ-006 Zeta Gundam
+* source:	https://sketchfab.com/3d-models/msz-006-zeta-gundam-a7d4a2346d714ab39ad32b1b91115cad
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "MSZ-006 Zeta Gundam" (https://sketchfab.com/3d-models/msz-006-zeta-gundam-a7d4a2346d714ab39ad32b1b91115cad) by Tigerar1 (https://sketchfab.com/allanromanreyes) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

@@ -29,93 +29,94 @@
   <button id="back-button" onclick="goBack()">Back</button>
 
    <a-scene mindar-image="imageTargetSrc: ./assets/mind/targets.mind; maxTrack: 10" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-   <a-assets>
+   
     <!-- OBJECT -->
-    <a-asset-item id="pk_bulbasaur" src="./assets/bulbasaur/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_charizard" src="./assets/charizard/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_dialga" src="./assets/dialga/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_empoleon" src="./assets/empoleon/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_flygon" src="./assets/flygon/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_gengar" src="./assets/gengar/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_glaceon" src="./assets/glaceon/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_lapras" src="./assets/lapras/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_latios" src="./assets/latios/scene.gltf"></a-asset-item>
-    <a-asset-item id="pk_lugia" src="./assets/lugia/scene.gltf"></a-asset-item>
+    <a-assets>
+      <a-asset-item id="GDM=00-R" src="./assets/GDM SCENE/GDM 00-R/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=DB-X" src="./assets/GDM SCENE/GDM DB-X/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=DESTINY" src="./assets/GDM SCENE/GDM DESTINY/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=F91" src="./assets/GDM SCENE/GDM F91/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=FREEDOM" src="./assets/GDM SCENE/GDM FREEDOM/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=NU" src="./assets/GDM SCENE/GDM NU/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=RX-78" src="./assets/GDM SCENE/GDM RX-78/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=V2" src="./assets/GDM SCENE/GDM V2/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=WING" src="./assets/GDM SCENE/GDM WING/scene.gltf"></a-asset-item>
+      <a-asset-item id="GDM=ZETA" src="./assets/GDM SCENE/GDM ZETA/scene.gltf"></a-asset-item>  
+    </a-assets>
 
-    <img id="pk_bulbasaur_blk" src="./assets/BLANK POKEMON CARD/BULBASAUR_BLK.png">
-    <img id="pk_charizard_blk" src="./assets/BLANK POKEMON CARD/CHARIZARD_BLK.png">
-    <img id="pk_dialga_blk" src="./assets/BLANK POKEMON CARD/DIALGA_BLK.png">
-    <img id="pk_empoleon_blk" src="./assets/BLANK POKEMON CARD/EMPOLEON_BLK.png">
-    <img id="pk_flygon_blk" src="./assets/BLANK POKEMON CARD/FLYGON_BLK.png">
-    <img id="pk_gengar_blk" src="./assets/BLANK POKEMON CARD/GENGAR_BLK.png">
-    <img id="pk_glaceon_blk" src="./assets/BLANK POKEMON CARD/GLACEON_BLK.png">
-    <img id="pk_lapras_blk" src="./assets/BLANK POKEMON CARD/LAPRAS_BLK.png">
-    <img id="pk_latios_blk" src="./assets/BLANK POKEMON CARD/LATIOS_BLK.png">
-    <img id="pk_lugia_blk" src="./assets/BLANK POKEMON CARD/LUGIA_BLK.png">
-
-
-      </a-assets>
+    <a-assets>
+      <img id="GDM_00-R" src="./assets/GDM - BLACK/GDM_00-R.png"/>
+      <img id="GDM_DB-X" src="./assets/GDM - BLACK/GDM_DB-X.png"/>
+      <img id="GDM_DESTINY" src="./assets/GDM - BLACk/GDM_DESTINY.png"/>
+      <img id="GDM_F91" src="./assets/GDM - BLACK/GDM_F91.png"/>
+      <img id="GDM_FREEDOM" src="./assets/GDM - BLACK/GDM_FREEDOM.png"/>
+      <img id="GDM_NU" src="./assets/GDM - BLACK/GDM_NU.png"/>
+      <img id="GDM_RX-78" src="./assets/GDM - BLACK/GDM_RX-78.png"/>
+      <img id="GDM_V2" src="./assets/GDM - BLACK/GDM_V2.png"/>
+      <img id="GDM_WING" src="./assets/GDM - BLACK/GDM_WING.png"/>
+      <img id="GDM_ZETA" src="./assets/GDM - BLACK/GDM_ZETA.png"/>
+    </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-      <!-- BULBASAUR -->
+      <!-- 00 RAISER -->
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-image src="#pk_bulbasaur_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.15 0.15 0.15" src="#pk_bulbasaur" animation-mixer>
+        <a-image src="#GDM_00-R" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=00-R" animation-mixer>
       </a-entity>
 
-      <!-- CHARIZARD -->
+      <!-- DOUBLE X -->
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-image src="#pk_charizard_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 40 0 " position="0 -0.1 0" scale="1.5 1.5 1.5" src="#pk_charizard" animation-mixer>
+        <a-image src="#GDM_DB-X" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=DB-X" animation-mixer>
       </a-entity>
         
-      <!-- DIALGA -->
+      <!-- DESTINY -->
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-image src="#pk_dialga_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 -45 0 " position="0 0 0" scale="0.05 0.05 0.05" src="#pk_dialga" animation-mixer>
+        <a-image src="#GDM_DESTINY" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 20 20" position="0 0 0" scale="0.0048 0.0048 0.0048" src="#GDM=DESTINY" animation-mixer>
       </a-entity>
         
-      <!-- EMPOLEON -->
+      <!-- F91 -->
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-image src="#pk_empoleon_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.08 0.08 0.08" src="#pk_empoleon" animation-mixer>
+        <a-image src="#GDM_F91" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.007 0.007 0.007" src="#GDM=F91" animation-mixer>
       </a-entity>
 
-      <!-- FLYGON -->
+      <!-- FREEDOM -->
       <a-entity mindar-image-target="targetIndex: 4">
-        <a-image src="#pk_flygon_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.05 0.05 0.05" src="#pk_flygon" animation-mixer>
+        <a-image src="#GDM_FREEDOM" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=FREEDOM" animation-mixer>
       </a-entity>
         
-      <!-- GENGAR -->
+      <!-- NU -->
       <a-entity mindar-image-target="targetIndex: 5">
-        <a-image src="#pk_gengar_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0.6 0" scale="0.25 0.25 0.25" src="#pk_gengar" animation-mixer>
+        <a-image src="#GDM_NU" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=NU" animation-mixer>
       </a-entity>
         
-      <!-- GLACEON -->
+      <!-- RX-78 -->
       <a-entity mindar-image-target="targetIndex: 6">
-        <a-image src="#pk_glaceon_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.3 0.3 0.3" src="#pk_glaceon" animation-mixer>
+        <a-image src="#GDM_RX-78" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=RX-78" animation-mixer>
       </a-entity>
         
-      <!-- LAPRAS -->
+      <!-- V2 -->
       <a-entity mindar-image-target="targetIndex: 7">
-        <a-image src="#pk_lapras_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 0.05 0" scale="0.15 0.15 0.15" src="#pk_lapras" animation-mixer>
+        <a-image src="#GDM_V2" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.007 0.007 0.007" src="#GDM=V2" animation-mixer>
       </a-entity>
         
-      <!-- LATIOS -->
+      <!-- WING ZERO -->
       <a-entity mindar-image-target="targetIndex: 8">
-        <a-image src="#pk_latios_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#pk_latios" animation-mixer>
+        <a-image src="#GDM_WING" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.005 0.005 0.005" src="#GDM=WING" animation-mixer>
       </a-entity>
         
-      <!-- LUGIA -->
+      <!-- ZETA -->
       <a-entity mindar-image-target="targetIndex: 9">
-        <a-image src="#pk_lugia_blk" rotation="270 0 0" width="2" height="1"></a-image>
-        <a-gltf-model rotation="0 45 0 " position="0 -0.25 0" scale="1.5 1.5 1.5" src="#pk_lugia" animation-mixer>
+        <a-image src="#GDM_ZETA" rotation="0 0 0" width="2" height="1"></a-image>
+        <a-gltf-model rotation="90 0 0" position="0 0 0" scale="0.006 0.006 0.006" src="#GDM=ZETA" animation-mixer>
       </a-entity>
 
     </a-scene>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	RX-78-2 Gundam
+* source:	https://sketchfab.com/3d-models/rx-78-2-gundam-638fa6ea1a974e478c534d3741575426
+* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "RX-78-2 Gundam" (https://sketchfab.com/3d-models/rx-78-2-gundam-638fa6ea1a974e478c534d3741575426) by Tigerar1 (https://sketchfab.com/allanromanreyes) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

@@ -5,7 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-	const list = ["pk_1", "pk_2", "pk_3", "pk_4", "pk_5", "pk_6", "pk_7", "pk_8", "pk_9", "pk_10"];
+	const list = ["GDM_00-R", "GDM_DB-X", "GDM_DESTINY", "GDM_F91", "GDM_FREEDOM", "GDM_NU", "GDM_RX-78", "GDM_V2", "GDM_WING", "GDM_ZETA"];
 	const visibles = [false, false, false, false, false, false, false, false, false, false];
 	const setVisible = (button, entities, visible) => {
 	  if (visible) {
@@ -79,64 +79,63 @@
     <button id="back-button" onclick="goBack()">Back</button>
     <div class="example-container">
       <div class="options-panel">
-        <img id="pk_1" src="./assets/PNG/bulbasaur.png"/>
-	    <img id="pk_2" src="./assets/PNG/charizard.png"/>
-	    <img id="pk_3" src="./assets/PNG/dialga.png"/>
-        <img id="pk_4" src="./assets/PNG/empoleon.png"/>
-	    <img id="pk_5" src="./assets/PNG/flygon.png"/>
-	    <img id="pk_6" src="./assets/PNG/gengar.png"/>
-        <img id="pk_7" src="./assets/PNG/glaceon.png"/>
-	    <img id="pk_8" src="./assets/PNG/lapras.png"/>
-	    <img id="pk_9" src="./assets/PNG/latios.png"/>
-        <img id="pk_10" src="./assets/PNG/lugia.png"/>
-	
+	      <img id="GDM_00-R" src="./assets/PNG/GDM_00-R.png"/>
+	      <img id="GDM_DB-X" src="./assets/PNG/GDM_DB-X.png"/>
+        <img id="GDM_DESTINY" src="./assets/PNG/GDM_DESTINY.png"/>
+	      <img id="GDM_F91" src="./assets/PNG/GDM_F91.png"/>
+	      <img id="GDM_FREEDOM" src="./assets/PNG/GDM_FREEDOM.png"/>
+        <img id="GDM_NU" src="./assets/PNG/GDM_NU.png"/>
+	      <img id="GDM_RX-78" src="./assets/PNG/GDM_RX-78.png"/>
+	      <img id="GDM_V2" src="./assets/PNG/GDM_V2.png"/>
+        <img id="GDM_WING" src="./assets/PNG/GDM_WING.png"/>
+        <img id="GDM_ZETA" src="./assets/PNG/GDM_ZETA.png"/>
       </div>
+      
       <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
-            <a-asset-item id="pk_bulbasaur" src="./assets/bulbasaur/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_charizard" src="./assets/charizard/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_dialga" src="./assets/dialga/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_empoleon" src="./assets/empoleon/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_flygon" src="./assets/flygon/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_gengar" src="./assets/gengar/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_glaceon" src="./assets/glaceon/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_lapras" src="./assets/lapras/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_latios" src="./assets/latios/scene.gltf"></a-asset-item>
-            <a-asset-item id="pk_lugia" src="./assets/lugia/scene.gltf"></a-asset-item>
-            
-            
+          <a-asset-item id="GDM=00-R" src="./assets/GDM SCENE/GDM 00-R/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=DB-X" src="./assets/GDM SCENE/GDM DB-X/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=DESTINY" src="./assets/GDM SCENE/GDM DESTINY/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=F91" src="./assets/GDM SCENE/GDM F91/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=FREEDOM" src="./assets/GDM SCENE/GDM FREEDOM/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=NU" src="./assets/GDM SCENE/GDM NU/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=RX-78" src="./assets/GDM SCENE/GDM RX-78/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=V2" src="./assets/GDM SCENE/GDM V2/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=WING" src="./assets/GDM SCENE/GDM WING/scene.gltf"></a-asset-item>
+          <a-asset-item id="GDM=ZETA" src="./assets/GDM SCENE/GDM ZETA/scene.gltf"></a-asset-item>
         </a-assets>
+
         <a-camera active="false" position="0 0 0"></a-camera>
 	<!-- head occluder -->
     <a-entity mindar-face-target="anchorIndex: 10">
-        <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#pk_bulbasaur" class="pk_1-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="-1.5 0.5 0" scale="0.0025 0.0025 0.0025" src="#GDM=00-R" class="GDM_00-R-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 201">
-        <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="1.5 1.5 1.5" src="#pk_charizard" class="pk_2-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0.7 0 0" scale="0.0025 0.0025 0.0025" src="#GDM=DB-X" class="GDM_DB-X-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 10">
-        <a-gltf-model rotation="0 -45 0" position="0 0 -0.5" scale="0.05 0.05 0.05" src="#pk_dialga" class="pk_3-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 0.5 0" scale="0.0025 0.0025 0.0025" src="#GDM=DESTINY" class="GDM_DESTINY-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 19">
-        <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.08 0.08 0.08" src="#pk_empoleon" class="pk_4-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 -0.2 0" scale="0.003 0.003 0.003" src="#GDM=F91" class="GDM_F91-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 54">
-        <a-gltf-model rotation="0 0 0" position="0 0.25 0" scale="0.05 0.05 0.05" src="#pk_flygon" class="pk_5-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="-0.3 0.6 0" scale="0.0025 0.0025 0.0025" src="#GDM=FREEDOM" class="GDM_FREEDOM-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 284">
-        <a-gltf-model rotation="0 0 0" position="-1 0 0" scale="0.2 0.2 0.2" src="#pk_gengar" class="pk_6-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="-1 -0.2 0" scale="0.0025 0.0025 0.0025" src="#GDM=NU" class="GDM_NU-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 369">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.3 0.3 0.3" src="#pk_glaceon" class="pk_7-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0.5 0.6 0" scale="0.003 0.003 0.003" src="#GDM=RX-78" class="GDM_RX-78-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 168">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.15 0.15 0.15" src="#pk_lapras" class="pk_8-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.0025 0.0025 0.0025" src="#GDM=V2" class="GDM_V2-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 52">
-        <a-gltf-model rotation="0 0 0" position="0 -0.3 0" scale="0.3 0.3 0.3" src="#pk_latios" class="pk_9-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="-0.4 -0.7 0" scale="0.0025 0.0025 0.0025" src="#GDM=WING" class="GDM_WING-entity" visible="false"></a-gltf-model>
           </a-entity>
           <a-entity mindar-face-target="anchorIndex: 330">
-        <a-gltf-model rotation="0 45 0" position="-1 1 -2" scale="1.5 1.5 1.5" src="#pk_lugia" class="pk_10-entity" visible="false"></a-gltf-model>
+        <a-gltf-model rotation="0 0 0" position="0.4 1 0" scale="0.0025 0.0025 0.0025" src="#GDM=ZETA" class="GDM_ZETA-entity" visible="false"></a-gltf-model>
           </a-entity>
         
       </a-scene>
